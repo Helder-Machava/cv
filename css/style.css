@@ -237,3 +237,15 @@ footer {
     }
 
 }
+@media screen and (max-width:373px) {
+
+    .works .school p {
+        font-size: 1.05em;
+    }
+}
+@media screen and (max-width:358px) {
+
+    .works .school p {
+        font-size: 1em;
+    }
+}
