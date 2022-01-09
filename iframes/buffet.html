@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../lib/plyr/plyr.css">
+    <script src="../lib/plyr/plyr.polyfilled.js"></script>
+    <style>
+        /* PLYR LIBRARY STYLE*/
+        :root {
+            --plyr-color-main: #fb8500;
+
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <video id="player" playsinline controls data-poster="/path/to/poster.jpg">
+        <source src="../video/buffet.mp4" type="video/mp4" />
+
+        <!-- Captions are optional -->
+        <track kind="captions" label="English captions" src="/path/to/captions.vtt" srclang="en" default />
+    </video>
+
+    <script>
+        const player = new Plyr('#player') 
+    </script>
+</body>
+
+</html>
