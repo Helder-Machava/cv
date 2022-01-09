@@ -308,6 +308,12 @@ footer {
     }    
         
 }
+@media screen and (max-width:364px) {
+    .contacto {
+        line-height: 30px;
+    }    
+
+}
 @media screen and (max-width:320px) {
     
     .logo {
