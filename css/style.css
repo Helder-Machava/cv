@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
 
 :root {
-    --azul-claro: #219ebc;
+    --azul-claro: #2294b1;
     --fundo: #ffffff;
     --cabecalho: #FC6200;
     --rodape: #023047e3;
@@ -142,7 +142,7 @@ i {
 }
 
 .works .school {
-    background-color: var(--cabecalho);
+    background-color: #ff721ae2;
     width: 200px;
     height: 200px;
     border-radius: 20px;
@@ -169,6 +169,70 @@ i {
     font-weight: 700;
     font-size: 1.2em;
 }
+
+
+
+/***************** MODAL *******************/
+.modal{
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #000000ab;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+}
+
+.modal:target{
+    opacity: 1;
+    visibility: visible;
+}
+.modal-content{
+    background-color: #fff;
+    width: 400px;
+    padding: 2rem 2rem 1rem;
+    border-radius: 5px;
+    border-top: .5rem solid var(--cabecalho);
+}
+.modal-title{
+    margin-bottom: 1rem;
+}
+.modal-link{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .7rem 3rem;
+    margin-top: 2rem;
+    border-radius: 5px;
+    color: #fff;
+    background-color: var(--azul-fonte);
+}
+.termos{
+    color: var(--azul-claro);
+}
+.termos:hover{
+    text-decoration: underline;
+}
+.cancel{
+    margin-left: 2rem;
+}
+.modal-link:hover{
+    background-color: #023047e9;
+}
+.modal-link:active{
+    background-color: #02273a;
+}
+
+
+
+
+
+
+
 
 footer {
     flex-shrink: 0;
@@ -315,6 +379,21 @@ footer {
 
 }
 @media screen and (max-width:320px) {
+    .modal-content{
+        background-color: #fff;
+        width: 345px;
+    }   
+    .modal-link{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding: .7rem 2rem;
+
+    }
+    .cancel{
+        margin-left: 2.5rem;
+    }
+    
     
     .logo {
         flex-grow: .9;
