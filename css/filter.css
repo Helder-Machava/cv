@@ -1,0 +1,58 @@
+:root {
+    --azul-claro: #2294b1;
+    --fundo: #ffffff;
+    --cabecalho: #FC6200;
+    --rodape: #023047e3;
+    --azul-escuro: #023047c1;
+    --azul-fonte: #023047;
+
+}
+
+.filter{
+    background-color: aquamarine;
+    width: 100vw;
+}
+
+input[type='radio']{
+   /* display: none;*/
+}
+.botoes{
+    display: flex;
+    justify-content: center;
+    margin: 0 25px 0 25px;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(106, 208, 174);
+}
+.botoes .tag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cabecalho);
+    color: #ffffff;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* FILTER CSS*/
+
+#all:checked ~ .botoes .all,
+#design:checked ~ .botoes .design,
+#wood:checked ~ .botoes .wood,
+#webdev:checked ~ .botoes .webdev{
+    background-color: #333333;
+    color: #fff;
+}
+
+/*FAZER O FILTER COM JAVASCRIPT */
+
+
+
+@media screen and (max-width:390px) {
+    .tag{
+        font-size: .64rem;
+        padding: 0;
+    }
+}

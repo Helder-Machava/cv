@@ -9,6 +9,9 @@
     --azul-fonte: #023047;
 
 }
+::-webkit-scrollbar{
+    width: 0px;
+}
 
 * {
     font-family: 'Poppins', sans-serif;
@@ -44,6 +47,7 @@ header {
     justify-content: space-between;
     position: fixed;
     z-index: 999;
+    box-shadow: 0px .5px 8px #00000052;
 
 }
 
@@ -193,7 +197,7 @@ i {
 }
 .modal-content{
     background-color: #fff;
-    width: 400px;
+    width: 500px;
     padding: 2rem 2rem 1rem;
     border-radius: 5px;
     border-top: .5rem solid var(--cabecalho);
@@ -218,7 +222,7 @@ i {
     text-decoration: underline;
 }
 .cancel{
-    margin-left: 2rem;
+    margin-left: 8rem;
 }
 .modal-link:hover{
     background-color: #023047e9;
@@ -226,11 +230,6 @@ i {
 .modal-link:active{
     background-color: #02273a;
 }
-
-
-
-
-
 
 
 
@@ -250,6 +249,28 @@ footer {
     font-size: .9em;
 }
 
+@media screen and (max-width:1024px) {
+    .four{
+        position: relative;
+        flex-direction: column;
+    }
+    .four i{
+        position: absolute;
+        top: 83px;
+        left: 36%;
+    }
+    .five{
+        position: relative;
+        flex-direction: column;
+    }
+    .five i{
+        position: absolute;
+        top: 83px;
+        left: 36%;
+    }
+
+}
+
 @media screen and (max-width:768px) {
     .works {
         width: 100%;
@@ -267,7 +288,6 @@ footer {
         box-shadow: 0px 7px 1px #ed8107e0;
 
     }
-
 
 }
 
@@ -343,6 +363,23 @@ footer {
         left: 36%;
     }
 
+    .modal-content{
+        background-color: #fff;
+        width: 345px;
+    }   
+    .modal-link{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding: .7rem 2rem;
+
+    }
+    .cancel{
+        margin-left: 2.5rem;
+    }
+
+
+
 }
 @media screen and (max-width:373px) {
 
@@ -369,9 +406,9 @@ footer {
         padding: 10px;
         margin-right: 10px;
         border-radius: 20px;
-    }    
-        
+    }
 }
+
 @media screen and (max-width:364px) {
     .contacto {
         line-height: 30px;
@@ -379,21 +416,55 @@ footer {
 
 }
 @media screen and (max-width:320px) {
+    .three{
+        position: relative;
+        flex-direction: column;
+    }
+    .three i{
+        position: absolute;
+        top: 92px;
+        left: 30%;
+    }
+    .four{
+        position: relative;
+        flex-direction: column;
+    }
+    .four i{
+        position: absolute;
+        top: 92px;
+        left: 33%;
+    }
+    .five{
+        position: relative;
+        flex-direction: column;
+    }
+    .five i{
+        position: absolute;
+        top: 85px;
+        left: 32%;
+    }
+    .six{
+        position: relative;
+        flex-direction: column;
+    }
+    .six i{
+        position: absolute;
+        top: 85px;
+        left: 37%;
+    }
+
+
     .modal-content{
         background-color: #fff;
-        width: 345px;
+        width: 300px;
     }   
     .modal-link{
         display: inline-flex;
         justify-content: center;
         align-items: center;
-        padding: .7rem 2rem;
+        padding: .7rem 1.3rem;
 
     }
-    .cancel{
-        margin-left: 2.5rem;
-    }
-    
     
     .logo {
         flex-grow: .9;
