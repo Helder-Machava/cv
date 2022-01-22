@@ -9,12 +9,11 @@
 }
 
 .filter{
-    background-color: aquamarine;
     width: 100vw;
 }
 
 input[type='radio']{
-   /* display: none;*/
+   display: none;
 }
 .botoes{
     display: flex;
@@ -22,7 +21,6 @@ input[type='radio']{
     margin: 0 25px 0 25px;
     align-items: center;
     gap: 10px;
-    background-color: rgb(106, 208, 174);
 }
 .botoes .tag{
     display: flex;
@@ -50,9 +48,41 @@ input[type='radio']{
 
 
 
-@media screen and (max-width:390px) {
+@media screen and (max-width:513px) {
+    .botoes{
+        margin: 0 10px 0 10px;
+    }    
     .tag{
-        font-size: .64rem;
+        font-size: .7rem;
         padding: 0;
+    }
+}
+
+@media screen and (max-width:377px) {
+    .tag{
+        font-size: .65rem;
+    }
+}
+@media screen and (max-width:360px) {
+    .botoes{
+        margin: 0 8px 0 8px;
+    }    
+    .tag{
+        font-size: .6rem;
+    }
+}
+@media screen and (max-width:338px) {
+    .tag{
+        font-size: .55rem;
+    }
+}
+@media screen and (max-width:320px) {
+    .botoes{
+        margin: 0 7px 0 7px;
+    }    
+}
+@media screen and (max-width:317px) {
+    .tag{
+        font-size: .5rem;
     }
 }

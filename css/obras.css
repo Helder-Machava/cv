@@ -73,10 +73,7 @@ header {
 /*FRAMES*/
 @keyframes light-contact {
     50% {
-        background-color: #bb000098;
-        color: var(--azul-fonte);
-        opacity: 0.1;
-
+        color:#5e5d5d5e;
     }
 }
 
@@ -116,9 +113,8 @@ section {
 .img {
     background-color: var(--azul-escuro);
     width: 100%;
-    height: 250px;
-    margin: 20px;
-    background-image: url(../img/buffetPoster.jpg);
+    height: 220px;
+    background-image: url(../img/fundo.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -178,7 +174,7 @@ footer {
     height: 40px;
     background-color: var(--rodape);
     font-weight: 200;
-    margin-top: 400px;
+    margin-top: 250px;
 }
 
 .copy {
@@ -186,6 +182,14 @@ footer {
     text-align: center;
     font-size: .9em;
 }
+
+.copy a{
+    color:#fff;   
+}
+.copy a:hover{
+    text-decoration: underline;
+}
+
 
 
 

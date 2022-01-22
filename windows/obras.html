@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-pt">
 
 <head>
     <meta charset="UTF-8">
@@ -26,7 +26,7 @@
 
     <section>
         <div class="perfil">
-            <div src="" class="img"></div>
+            <div class="img"></div>
             <h1 class="welcome">Veja alguns Trabalhos por mim realizados!</h1>
         </div>
 
@@ -38,18 +38,29 @@
             <input type="radio" id="webdev" name="radioBtn">
 
             <div class="botoes">
-                <label for="all" class="tag all">Tudo</label>
+                <label for="all" class="tag all" onclick="sessionAll()">Tudo</label>
                 <label for="design" class="tag design">Design | 3D</label>
                 <label for="wood" class="tag wood" >WoodWork</label>
-                <label for="webdev" class="tag webdev">WebDev</label>
+                <label for="webdev" class="tag webdev" id="webdev" onclick="sessionDev()">WebDev</label>
             </div>
         </div>
         <!--END COMPONETS FILTER-->
 
 
         <!--VIDEOS FROM OWN IFRAM-->
-        <div class="content">
-            <div id="mainIframe" class="design">
+        <div class="content designCntt">
+            <div id="mainIframe">
+                <div class="responsive">
+                    <iframe src="../iframes/buffet.html" height="496" width="504" scrolling='no' frameborder="0"
+                        allowfullscreen="" title="Publicação incorporada">
+                    </iframe>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="content woodCntt">
+            <div id="mainIframe">
                 <div class="responsive">
                     <iframe src="../iframes/buffet.html" height="496" width="504" scrolling='no' frameborder="0"
                         allowfullscreen="" title="Publicação incorporada">
@@ -63,9 +74,11 @@
     </section>
 
     <footer>
-        <div class="copy"> Copyright &copy; 2022 | HELDER MACHAVA</div>
+        <div class="copy"> <a href="copyright.html">Copyright &copy; 2022</a> | HELDER MACHAVA</div>
     </footer>
 
+
+    <script src="../js/script.js"></script>
 </body>
 
 </html>

@@ -72,10 +72,7 @@ header {
 /*FRAMES*/
 @keyframes light-contact {
     50% {
-        background-color: #bb000098;
-        color: var(--azul-fonte);
-        opacity: 0.1;
-
+        color:#5e5d5d5e;
     }
 }
 
@@ -92,7 +89,7 @@ header {
 
     cursor: pointer;
     animation-name: light-contact;
-    animation-duration: 2.1s;
+    animation-duration: 1.9s;
     animation-iteration-count: infinite;
 }
 
@@ -133,10 +130,12 @@ section {
     flex-direction: row;
     /*flex-wrap: wrap;*/
     justify-content: center;
-    background-color: #ff000025;
+    background-color: #5856561c;
     margin-top: 5px;
     flex-wrap: wrap;
     margin: auto;
+    padding: 20px 0 40px 0;
+
 
 }
 
@@ -237,7 +236,6 @@ footer {
     flex-shrink: 0;
     width: 100%;
     height: 40px;
-    margin-top: 40px;
     background-color: var(--rodape);
     font-weight: 200;
 
@@ -247,6 +245,12 @@ footer {
     line-height: 40px;
     text-align: center;
     font-size: .9em;
+}
+.copy a{
+    color:#fff;   
+}
+.copy a:hover{
+    text-decoration: underline;
 }
 
 @media screen and (max-width:1024px) {
@@ -441,7 +445,7 @@ footer {
     .five i{
         position: absolute;
         top: 85px;
-        left: 32%;
+        left: 30%;
     }
     .six{
         position: relative;
